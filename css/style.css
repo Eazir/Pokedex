@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #163243;
+  min-height: 100vh;
+}
+
+main {
+  background-color: #2C5E7A;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contenedor {
+  background-color: #CFD6DF;
+  border: 3px solid #A3B4C5;
+  width: 600px;
+  min-height: 95vh;
+  padding: 30px;
+  border-radius: 20px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header h1 {
+  color: #163243;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.pantalla {
+  background-color: #4F6F80;
+  width: 100%;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  border-radius: 12px;
+  border: 2px solid #A3B4C5;
+}
+
+.pantalla img {
+  height: 190px;
+  image-rendering: pixelated;
+}
+
+.regiones {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.regiones button {
+  background-color: #3D6A66;
+  color: #E6EDF2;
+  border: none;
+  padding: 14px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.regiones button:hover {
+  opacity: 0.85;
+  transform: scale(1.03);
+}
+
+.nacional {
+  margin: 10px 0;
+}
+
+.nacional button {
+  background-color: #A33A3A;
+  color: #E6EDF2;
+  border: none;
+  padding: 14px 30px;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 100%;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.nacional button:hover {
+  opacity: 0.85;
+  transform: scale(1.02);
+}
+
+footer {
+  text-align: center;
+  margin-top: auto;
+  padding-top: 30px;
+  color: #163243;
+  font-size: 0.75rem;
+  line-height: 1.8;
+}
+
+footer a {
+  color: #163243;
+  text-decoration: underline;
+}
+
+footer span {
+  font-weight: bold;
+}
+
+
+h1 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .contenedor {
+    width: 95%;
+    padding: 15px;
+    border-radius: 12px;
+    margin: 10px 0;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  .regiones {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .pantalla {
+    height: 160px;
+  }
+
+  .pantalla img {
+    height: 140px;
+  }
+}
