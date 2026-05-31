@@ -47,7 +47,16 @@ POKEDEX/
 
 ## Cómo abrir el proyecto
 
-### En PC
+### Versión web
+
+Accede directamente desde cualquier navegador:
+
+```text
+https://jaire-biutrarar.github.io/Pokedex
+```
+(como pc y celular)
+
+### Ejecución local (PC)
 
 1. Descarga o clona el repositorio.
 2. Abre la carpeta en VS Code.
@@ -65,19 +74,13 @@ POKEDEX/
 http://IP-DE-TU-PC:5500/index.html
 ```
 
-4. Obtén tu IP con:
+4. Obtén la IP local de tu equipo:
 
-Linux:
+- Linux: ip addr
+- Windows: ipconfig
+- macOS: ipconfig getifaddr en0
 
-```bash
-ip addr
-```
-
-Windows:
-
-```bash
-ipconfig
-```
+nota: tener paciencia con la carga de los pokemones de la pokedex
 
 ---
 
@@ -96,21 +99,10 @@ ipconfig
 | Paldea   | #906 - #1025 |
 | Nacional | #001 - #1025 |
 
+nota: no son colores, solo que actua como colores por el .md,
+en realidad es el rango por region
 ---
 
-## Estado del proyecto
-
- Estructura inicial del proyecto
- Organización por regiones
- Navegación entre páginas
- Integración con PokéAPI
- Buscador por nombre y número
- Ficha individual de Pokémon
- Sistema de evoluciones
- Diseño responsive para móvil
- Décima región (próximamente)
-
----
 
 ## Objetivos
 
@@ -130,3 +122,6 @@ Desarrollado por **Kevin Aguirre (Jaire)**.
 Datos obtenidos de PokéAPI.
 
 Pokémon © Nintendo, Game Freak y Creatures Inc.
+
+
+nota: Jaire es mi nombre artistico/gamer
