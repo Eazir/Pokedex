@@ -7,25 +7,42 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/region.css">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
-        <div class="contenedor">
-            <header>
-                <a href="index.html"> Inicio</a>
-                <h1 id="nombre-region">Region</h1>
-                <nav id="menu-regiones"></nav>
-            </header>
-            <input type="text" id="buscador" placeholder="Buscar Pokemon...">
+    <div class="dex-body">
+        <div class="dex-hinge"></div>
+        <div class="dex-top">
+            <div class="dex-leds">
+                <span class="led led-scarlet"></span>
+                <span class="led led-blue"></span>
+                <span class="led led-gold"></span>
+            </div>
+            <div class="screen-bezel">
+                <div class="pantalla" style="height:auto; min-height:200px; padding:10px">
+                    <div class="region-header">
+                        <a href="index.html">← Inicio</a>
+                        <h1 id="nombre-region">Region</h1>
+                    </div>
+                    <nav id="menu-regiones"></nav>
+                    <input type="text" id="buscador" placeholder="Buscar Pokémon...">
+                    <div class="pantalla-scanline"></div>
+                </div>
+                <div class="screen-brand">POKéDEX</div>
+            </div>
+        </div>
+        <div class="dex-divider">
+            <div class="divider-notch"></div>
+        </div>
+        <div class="dex-bottom region-page">
             <section class="lista-pokemon">
             </section>
-            <footer>
-             <p>Creado por <span>Jaire /Kevin Aguirre</span></p>
-             <p>Datos obtenidos de <a href="https://pokeapi.co" target="_blank">PokéAPI</a></p>
-             <p>Pokémon © Nintendo / Game Freak / Creatures Inc.</p>
+            <footer class="dex-footer">
+             <p>Creado por <span>Eazir / Sebastian David</span></p>
+             <p>Datos de <a href="https://pokeapi.co" target="_blank">PokéAPI</a> · Pokémon © Nintendo</p>
             </footer>
         </div>
-    </main>
+    </div>
     <script src="js/regiones.js"></script>
     <script src="js/region.js"></script>
 </body>

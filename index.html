@@ -6,38 +6,109 @@
     <title>Pokedex</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
-        <div class="contenedor">
-            <header>
-                <h1>Pokedex</h1>
-            </header>
-            <div class="pantalla">
-                <img src="" alt="Starter">
+    <div class="dex-body">
+        <div class="dex-hinge"></div>
+        <div class="dex-top">
+            <div class="dex-leds">
+                <span class="led led-scarlet"></span>
+                <span class="led led-blue"></span>
+                <span class="led led-gold"></span>
             </div>
-            <section class="regiones">
-                <button data-region="kanto">I. Kanto</button>
-                <button data-region="johto">II. Johto</button>
-                <button data-region="hoenn">III. Hoenn</button>
-                <button data-region="sinnoh">IV. Sinnoh</button>
-                <button data-region="unova">V. Unova</button>
-                <button data-region="kalos">VI. Kalos</button>
-                <button data-region="alola">VII. Alola</button>
-                <button data-region="galar">VIII. Galar</button>
-                <button data-region="paldea">IX. Paldea</button>
-                <button data-region="proximamente">X. ???</button>
-            </section>
-            <section class="nacional">
-                <button data-region="nacional">Pokedex Nacional</button>
-            </section>
-            <footer>
-                <p>Creado por <span>Jaire /Kevin Aguirre</span></p>
-                <p>Datos obtenidos de <a href="https://pokeapi.co" target="_blank">PokéAPI</a></p>
-                <p>Pokémon © Nintendo / Game Freak / Creatures Inc.</p>
+            <div class="screen-bezel">
+                <div class="pantalla">
+                    <img src="" alt="Starter">
+                    <div class="pantalla-scanline"></div>
+                </div>
+                <div class="screen-brand">POKéDEX</div>
+            </div>
+        </div>
+        <div class="dex-divider">
+            <div class="divider-notch"></div>
+        </div>
+        <div class="dex-bottom">
+            <div class="dex-controls">
+                <div class="dex-info">
+                    <h1 class="dex-title">Pokedex</h1>
+                    <p class="dex-sub">Explora el mundo Pokémon</p>
+                </div>
+                <button id="btn-slot-machine" class="btn-slot">
+                    <span class="slot-icon">⚡</span>
+                    <span class="slot-text">Equipo Aleatorio</span>
+                </button>
+                <section class="regiones">
+                    <button data-region="kanto">Kanto</button>
+                    <button data-region="johto">Johto</button>
+                    <button data-region="hoenn">Hoenn</button>
+                    <button data-region="sinnoh">Sinnoh</button>
+                    <button data-region="unova">Unova</button>
+                    <button data-region="kalos">Kalos</button>
+                    <button data-region="alola">Alola</button>
+                    <button data-region="galar">Galar</button>
+                    <button data-region="paldea">Paldea</button>
+                    <button data-region="proximamente">???</button>
+                </section>
+                <div class="dex-actions">
+                    <button data-region="nacional" class="btn-national">Pokedex Nacional</button>
+                </div>
+            </div>
+            <footer class="dex-footer">
+                <p>Creado por <span>Eazir / Sebastian David</span></p>
+                <p>Datos de <a href="https://pokeapi.co" target="_blank">PokéAPI</a> · Pokémon © Nintendo</p>
             </footer>
         </div>
-    </main>
+    </div>
+
+    <div id="slot-overlay" class="slot-overlay hidden">
+        <div class="slot-machine">
+            <div class="slot-header">⚡ Equipo Aleatorio ⚡</div>
+            <div class="slot-reels" id="slot-reels">
+                <div class="slot-reel-wrapper">
+                    <div class="slot-reel" data-index="0">
+                        <img src="" alt="?">
+                    </div>
+                    <div class="slot-label"></div>
+                </div>
+                <div class="slot-reel-wrapper">
+                    <div class="slot-reel" data-index="1">
+                        <img src="" alt="?">
+                    </div>
+                    <div class="slot-label"></div>
+                </div>
+                <div class="slot-reel-wrapper">
+                    <div class="slot-reel" data-index="2">
+                        <img src="" alt="?">
+                    </div>
+                    <div class="slot-label"></div>
+                </div>
+                <div class="slot-reel-wrapper">
+                    <div class="slot-reel" data-index="3">
+                        <img src="" alt="?">
+                    </div>
+                    <div class="slot-label"></div>
+                </div>
+                <div class="slot-reel-wrapper">
+                    <div class="slot-reel" data-index="4">
+                        <img src="" alt="?">
+                    </div>
+                    <div class="slot-label"></div>
+                </div>
+                <div class="slot-reel-wrapper">
+                    <div class="slot-reel" data-index="5">
+                        <img src="" alt="?">
+                    </div>
+                    <div class="slot-label"></div>
+                </div>
+            </div>
+            <div class="slot-footer hidden" id="slot-footer">
+                <button id="btn-slot-close" class="btn-slot-close">Cerrar ✕</button>
+            </div>
+            <div class="slot-spinning-text" id="slot-spinning-text">Girando...</div>
+        </div>
+    </div>
+
     <script src="js/regiones.js"></script>
     <script src="js/index.js"></script>
 </body>

@@ -2,17 +2,94 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Próximamente</title>
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    .prox-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      padding: 20px 0;
+    }
+    .prox-content h1 {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 1rem;
+      color: #c4b5e3;
+      text-shadow: 0 0 20px rgba(139, 92, 246, 0.2);
+    }
+    .prox-content p {
+      color: rgba(139, 92, 246, 0.5);
+      font-size: 0.85rem;
+      line-height: 1.6;
+      text-align: center;
+    }
+    .prox-content a {
+      color: #f5f0ff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 12px 30px;
+      background: linear-gradient(135deg, rgba(106, 13, 173, 0.3), rgba(74, 26, 110, 0.4));
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 10px;
+      transition: all 0.2s;
+      font-family: 'Orbitron', monospace;
+      letter-spacing: 1px;
+    }
+    .prox-content a:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 16px rgba(106, 13, 173, 0.3);
+      border-color: #D32F2F;
+    }
+  </style>
 </head>
 <body>
-  <main>
-    <div class="contenedor">
-      <h1>Próximamente...</h1>
-      <p>La décima región aún no ha sido confirmada.</p>
-      <a href="index.html">← Volver al inicio</a>
+  <div class="dex-body">
+    <div class="dex-hinge"></div>
+    <div class="dex-top">
+      <div class="dex-leds">
+        <span class="led led-scarlet"></span>
+        <span class="led led-blue"></span>
+        <span class="led led-gold"></span>
+      </div>
+      <div class="screen-bezel">
+        <div class="pantalla" style="height:200px">
+          <div class="prox-content">
+            <h1>Próximamente...</h1>
+            <p>La décima región aún no ha sido confirmada.</p>
+          </div>
+          <div class="pantalla-scanline"></div>
+        </div>
+        <div class="screen-brand">POKéDEX</div>
+      </div>
     </div>
-  </main>
+    <div class="dex-divider">
+      <div class="divider-notch"></div>
+    </div>
+    <div class="dex-bottom" style="padding: 24px; text-align:center">
+      <a href="index.html" style="
+        color: #f5f0ff;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 0.9rem;
+        padding: 12px 30px;
+        background: linear-gradient(135deg, rgba(106,13,173,0.3), rgba(74,26,110,0.4));
+        border: 1px solid rgba(139,92,246,0.2);
+        border-radius: 10px;
+        display: inline-block;
+        font-family: 'Orbitron', monospace;
+        letter-spacing: 1px;
+      ">← Volver al inicio</a>
+      <footer class="dex-footer" style="margin-top: 20px;">
+        <p>Creado por <span>Eazir / Sebastian David</span></p>
+        <p>Datos de <a href="https://pokeapi.co" target="_blank">PokéAPI</a> · Pokémon © Nintendo</p>
+      </footer>
+    </div>
+  </div>
 </body>
 </html>
