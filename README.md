@@ -50,7 +50,11 @@ POKEDEX/
 
 ### Versión web
 
-Próximamente disponible en GitHub Pages.
+Accede desde cualquier navegador:
+
+```text
+https://eazir.github.io/Pokedex/
+```
 
 ### Ejecución local (PC)
 
