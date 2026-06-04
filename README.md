@@ -1,21 +1,26 @@
 # Pokédex 🎮
 
-Una Pokédex web interactiva que permite explorar los Pokémon de todas las regiones, desde Kanto hasta Paldea.
+Una Pokédex web interactiva con diseño estilo **dispositivo Pokémon**, que permite explorar todas las regiones desde Kanto hasta Paldea, consultar información detallada de cada Pokémon y generar equipos aleatorios con animación tipo **traga-monedas**.
 
 ---
 
-## Descripción
+## Características
 
-Aplicación web que consume la PokéAPI para mostrar información detallada de los Pokémon organizados por región. Permite buscar Pokémon por nombre o número, ver su ficha completa con tipos, estadísticas y cadena evolutiva.
+- **Exploración por regiones** — Navega por las 9 regiones + Pokédex Nacional.
+- **Búsqueda en tiempo real** — Filtra Pokémon por nombre o número.
+- **Ficha detallada** — Tipos, estadísticas base y cadena evolutiva.
+- **Equipo Aleatorio** — Genera 6 Pokémon al azar con animación de carretes tipo casino.
+- **Diseño dispositivo** — Interfaz inspirada en la Pokédex clásica con LEDs, scanlines y bisagra decorativa.
 
 ---
 
 ## Tecnologías
 
 * HTML5
-* CSS3
+* CSS3 (gradientes, animaciones, glassmorphism)
 * JavaScript (Vanilla)
 * PokéAPI
+* Google Fonts (Press Start 2P + Orbitron)
 
 ---
 
@@ -23,19 +28,15 @@ Aplicación web que consume la PokéAPI para mostrar información detallada de l
 
 ```text
 POKEDEX/
-├── assets/
-│   ├── backgrounds/
-│   ├── icons/
-│   └── logos/
 ├── css/
-│   ├── style.css
-│   ├── region.css
-│   └── pokemon.css
+│   ├── style.css        ← Estilos generales y slot machine
+│   ├── region.css       ← Estilos de lista de región
+│   └── pokemon.css      ← Estilos de ficha de Pokémon
 ├── js/
-│   ├── regiones.js
-│   ├── index.js
-│   ├── region.js
-│   └── pokemon.js
+│   ├── regiones.js      ← Rangos numéricos por región
+│   ├── index.js         ← Lógica principal + slot machine
+│   ├── region.js        ← Carga y filtro de región
+│   └── pokemon.js       ← Ficha detallada y evoluciones
 ├── index.html
 ├── region.html
 ├── pokemon.html
@@ -49,38 +50,25 @@ POKEDEX/
 
 ### Versión web
 
-Accede directamente desde cualquier navegador:
-
-```text
-https://jaire-biutrarar.github.io/Pokedex
-```
-(como pc y celular)
+Próximamente disponible en GitHub Pages.
 
 ### Ejecución local (PC)
 
-1. Descarga o clona el repositorio.
+1. Clona el repositorio.
 2. Abre la carpeta en VS Code.
-3. Instala la extensión Live Server.
-4. Haz clic derecho en `index.html`.
-5. Selecciona **Open with Live Server**.
+3. Instala la extensión **Live Server**.
+4. Haz clic derecho en `index.html` → **Open with Live Server**.
 
 ### En celular (misma red WiFi)
 
 1. Ejecuta Live Server en la PC.
-2. Abre el navegador del celular.
-3. Ingresa a:
+2. Abre el navegador del celular en `http://IP-DE-TU-PC:5500/index.html`.
+3. Obtén la IP local:
+   - Linux: `ip addr`
+   - Windows: `ipconfig`
+   - macOS: `ipconfig getifaddr en0`
 
-```text
-http://IP-DE-TU-PC:5500/index.html
-```
-
-4. Obtén la IP local de tu equipo:
-
-- Linux: ip addr
-- Windows: ipconfig
-- macOS: ipconfig getifaddr en0
-
-nota: tener paciencia con la carga de los pokemones de la pokedex
+> Nota: tener paciencia con la carga de los Pokémon — la PokéAPI puede tardar.
 
 ---
 
@@ -99,29 +87,24 @@ nota: tener paciencia con la carga de los pokemones de la pokedex
 | Paldea   | #906 - #1025 |
 | Nacional | #001 - #1025 |
 
-nota: no son colores, solo que actua como colores por el .md,
-en realidad es el rango por region
 ---
 
+## Funcionalidades
 
-## Objetivos
-
-* Mostrar Pokémon por región.
-* Buscar Pokémon por nombre o número.
-* Mostrar estadísticas base.
-* Mostrar tipos y habilidades.
-* Mostrar líneas evolutivas.
-* Mantener una interfaz simple y rápida.
+- Mostrar Pokémon por región
+- Buscar Pokémon por nombre o número
+- Ver estadísticas base
+- Ver tipos
+- Ver líneas evolutivas
+- Generar equipo aleatorio de 6 Pokémon con animación tipo slot machine
+- Diseño responsivo
 
 ---
 
 ## Créditos
 
-Desarrollado por **Kevin Aguirre (Jaire)**.
+Desarrollado por **Eazir / Sebastian David**.
 
-Datos obtenidos de PokéAPI.
+Datos obtenidos de [PokéAPI](https://pokeapi.co).
 
 Pokémon © Nintendo, Game Freak y Creatures Inc.
-
-
-nota: Jaire es mi nombre artistico/gamer
